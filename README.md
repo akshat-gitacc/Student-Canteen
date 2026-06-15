@@ -22,48 +22,6 @@ I wrote the initialization scripts in `backend/config/initDatabase.js` to automa
 - `frontend/`: React components, state contexts, and styling with Tailwind CSS.
 - `database_schema.sql`: Clean SQL script containing the database tables structure.
 
-## Setup and Installation
-
-### Prerequisites
-- Node.js (v16 or higher)
-- MySQL (v8.0 or higher)
-
-### Setup Steps
-
-1. **Clone and Install Backend**:
-   ```bash
-   cd backend
-   npm install
-   ```
-   Create a `.env` file in the `backend` folder:
-   ```env
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASSWORD=your_mysql_password
-   DB_NAME=scx_canteen
-   PORT=5000
-   FRONTEND_URL=http://localhost:5173
-   JWT_SECRET=your_secret_key
-   ```
-
-2. **Install Frontend**:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-   Create a `.env` file in the `frontend` folder:
-   ```env
-   VITE_API_URL=http://localhost:5000/api
-   ```
-
-3. **Database Initialization**:
-   Start the backend server, and the database and tables will be created automatically.
-   
-   If you prefer manual setup, run the schema script:
-   ```bash
-   mysql -u root -p < database_schema.sql
-   ```
-
 ## Running the Application
 
 - **Start backend server** (from `backend/`):
@@ -74,10 +32,6 @@ I wrote the initialization scripts in `backend/config/initDatabase.js` to automa
   ```bash
   npm run dev
   ```
-
-### Default Credentials
-- **Admin Email**: admin@scx.com
-- **Admin Password**: admin123
 
 ## API Endpoints
 
