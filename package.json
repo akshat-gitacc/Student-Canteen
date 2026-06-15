@@ -1,0 +1,16 @@
+{
+  "name": "scx-canteen",
+  "version": "1.0.0",
+  "description": "SCX Canteen Management System",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install"
+  }
+}
+
